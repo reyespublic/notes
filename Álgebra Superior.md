@@ -2,7 +2,7 @@
 tags: [School]
 title: Álgebra Superior
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-02-17T20:14:00.871Z'
+modified: '2020-02-17T20:32:09.172Z'
 ---
 
 # Álgebra Superior
@@ -138,5 +138,25 @@ $$
 ---
 
 ## Demostraciones <a name="E1"></a>[:arrow_heading_up:](#index)</small>
+
+1) $A \cap (B - C) = (A \cap B) - (A \cap C)$
+
+$\text{Desmotración}$
+
+$$
+\begin{aligned}
+(A \cap B) - (A \cap C) &= (A \cap B) \cap (A \cap C)^{c},\text{ prop. 3.} \\
+&= (A \cap B) \cap (A^{c} \cup C^{c}), \text{ prop. DeMorgan} \\
+&= [(A \cap B) \cap A^{c}] \cup [(A \cap B) \cap C^{c}], \text{ prop. distributiva} \\
+&= [A \cap (B \cap A^{c})] \cup [A \cap (B \cap C^{c})], \text{ prop. asociativa} \\
+&= [A \cap (A^{c} \cap B)] \cup [A \cap (B \cap C^{c})], \text{ prop. conmutativa} \\
+&= [(A \cap A^{c}) \cap B]\cup[A \cap (B \cap C^{c})], \text{ prop. asociativa}\\ 
+&= [\varnothing \cap B] \cup [A \cap (B \cap C^{c})], \text{ prop. complemento} \\
+&= \varnothing \cup [A \cap (B \cap C^{c})], \text{ prop. } \varnothing \cap B = \varnothing \\
+&= A \cap (B \cap C^{c}) \\ 
+&= A \cap (B - C) \\
+\therefore A \cap (B - C) &= (A \cap B) - (A \cap C). \\ \text{ y ya!}
+\end{aligned} 
+$$
 
 
