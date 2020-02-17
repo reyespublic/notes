@@ -2,7 +2,7 @@
 tags: [School]
 title: Álgebra Superior
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-02-17T20:32:09.172Z'
+modified: '2020-02-17T22:27:01.660Z'
 ---
 
 # Álgebra Superior
@@ -11,7 +11,7 @@ Libreta para la clase de *Álgebra Superior*.
 
 ## Índice <a name="index"></a>
 
-2. [Unidad 2](#U2)
+1. [Unidad 2](#U2)
    1. [Subconjuntos de conjuntos y conjunto potencia](#T1)
       1. [Subconjuntos](#T1S1)
       2. [Conjunto potencia](#T1S1)
