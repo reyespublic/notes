@@ -2,7 +2,7 @@
 tags: [School]
 title: Matemáticas Discretas
 created: '2020-02-16T06:42:59.547Z'
-modified: '2020-02-17T17:23:05.096Z'
+modified: '2020-02-18T15:48:23.875Z'
 ---
 
 # Matemáticas Discretas
@@ -91,5 +91,43 @@ a_{n} = a_{n-1} + a_{n-2} \\
 a_{1} = 1 \\
 a_{2} = 2 
 $$
+
+&nbsp;
+
+7. Encuentre la **relación de recurrencia (R.R)** para el número de bolitas en una piramide, donde la base de $a_{n}$ es de $n$ bolitas y se van reduciendo el número, hasta llegar a la punta, dónde sólo es $1$ bolita.
+
+$$
+a_{1} = 1 \\
+a_{2} = 3 \\
+a_{3} = 6 \\
+a_{4} = 10 \\
+a_{5} = 15 \\
+\vdots \\
+\boxed{a_{n} = n + a_{n-1}}
+$$
+
+&nbsp;
+
+$$
+\underbrace{\sum_{i=1}^{n}={n(n+1) \over 2}}_{\text{Forma cerrada}}
+$$
+
+&nbsp;
+
+8. Sea $a_{n}$ el número de formas diferentes de pagar $n$ dolares.
+
+
+|   Valor   | Tipo  |
+|   :---:   |  :-:  |
+| 1 dolar   |  $m$  |
+| 2 dolares |  $m$  |
+| 5 dolares | $m,b$ | 
+
+> Donde $m$ es $'moneda'$ y $b$ es $'billete'$.
+
+$$
+a_{n} = a_{n-1} + a_{n-2} + a_{n-5} + a_{n-5}
+$$
+
 
 
