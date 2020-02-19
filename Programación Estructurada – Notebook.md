@@ -1,11 +1,12 @@
 ---
-tags: [School]
-title: Programación Estructurada
+pinned: true
+tags: [Notebook, School]
+title: Programación Estructurada – Notebook
 created: '2020-02-16T06:43:09.625Z'
-modified: '2020-02-17T18:31:35.260Z'
+modified: '2020-02-19T22:32:11.971Z'
 ---
 
-# Programación Estructurada
+# Programación Estructurada – Notebook
 
 Libreta de apuntes para la clase de *Programación Estructurada*.
 

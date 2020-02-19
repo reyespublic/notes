@@ -1,11 +1,12 @@
 ---
-tags: [School]
-title: Matemáticas Discretas
+pinned: true
+tags: [Notebook, School]
+title: Matemáticas Discretas – Notebook
 created: '2020-02-16T06:42:59.547Z'
-modified: '2020-02-18T15:48:23.875Z'
+modified: '2020-02-19T22:32:18.555Z'
 ---
 
-# Matemáticas Discretas
+# Matemáticas Discretas – Notebook
 
 Libreta para la materia de *Matemáticas Discretas*
 

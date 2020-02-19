@@ -1,11 +1,12 @@
 ---
-tags: [School]
-title: Álgebra Superior
+pinned: true
+tags: [Notebook, School]
+title: Álgebra Superior – Notebook
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-02-18T19:37:21.959Z'
+modified: '2020-02-19T22:32:14.039Z'
 ---
 
-# Álgebra Superior
+# Álgebra Superior – Notebook
 
 Libreta para la clase de *Álgebra Superior*.
 

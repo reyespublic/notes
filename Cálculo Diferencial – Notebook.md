@@ -1,11 +1,12 @@
 ---
-tags: [School]
-title: Cálculo Diferencial
+pinned: true
+tags: [Notebook, School]
+title: Cálculo Diferencial – Notebook
 created: '2020-02-16T06:42:49.001Z'
-modified: '2020-02-17T16:06:35.192Z'
+modified: '2020-02-19T22:32:16.659Z'
 ---
 
-# Cálculo Diferencial
+# Cálculo Diferencial – Notebook
 
 Libreta para la materia de *Cálculo Diferencial*.
 
