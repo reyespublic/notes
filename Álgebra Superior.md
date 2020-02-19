@@ -2,7 +2,7 @@
 tags: [School]
 title: Álgebra Superior
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-02-17T22:27:01.660Z'
+modified: '2020-02-18T19:37:21.959Z'
 ---
 
 # Álgebra Superior
@@ -159,4 +159,22 @@ $$
 \end{aligned} 
 $$
 
+2) Sea $X$ el conjunto unvierso y sean $A, B,$ y $C$ subconjuntos de $X$. Demuestra:
+
+   + Si $A \subset B$ y $A \subset C$ entonces $A \subset B \cap C$
+
+   $Demostración$
+
+   $$
+   \text{Por definición:} \\
+   A \subset B \iff (\forall x, x \in A \rArr x \in B) \\
+   \ \\
+   \text{Entonces, si } A \subset B \text{ y } A \subset C \\
+   \forall x \in A \space | \space x \in B \land x \in C \\
+   \ \\
+   \text{Por definición de Intersección: }\\
+   A \cap B = \{x \in X \space | \space x \in A \land x \in B\} \\
+   \ \\
+   \therefore \space A \subset (B \cap C) \text{ y ya!} 
+   $$
 
