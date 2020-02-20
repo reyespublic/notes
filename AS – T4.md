@@ -1,9 +1,8 @@
 ---
-attachments: [Clipboard_2020-02-19-17-24-48.png, Clipboard_2020-02-19-17-28-30.png]
 tags: [Notebook]
 title: AS – T4
 created: '2020-02-19T22:27:25.738Z'
-modified: '2020-02-20T00:08:51.417Z'
+modified: '2020-02-20T13:42:36.347Z'
 ---
 
 # AS – T4
