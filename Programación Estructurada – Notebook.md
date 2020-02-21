@@ -3,7 +3,7 @@ pinned: true
 tags: [Notebook, School]
 title: Programación Estructurada – Notebook
 created: '2020-02-16T06:43:09.625Z'
-modified: '2020-02-19T22:32:11.971Z'
+modified: '2020-02-21T15:53:42.082Z'
 ---
 
 # Programación Estructurada – Notebook
@@ -63,5 +63,7 @@ for (i=0;i<10;i++) {
 return 0;
 }
 ```
+
+## Floats
 
 
