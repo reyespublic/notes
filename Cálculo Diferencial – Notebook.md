@@ -1,9 +1,10 @@
 ---
+attachments: [Clipboard_2020-02-27-08-55-19.png, Clipboard_2020-02-27-09-05-48.png, Clipboard_2020-02-27-09-18-19.png]
 pinned: true
 tags: [Notebook, School]
 title: Cálculo Diferencial – Notebook
 created: '2020-02-16T06:42:49.001Z'
-modified: '2020-02-27T14:03:40.030Z'
+modified: '2020-02-27T15:33:06.110Z'
 ---
 
 # Cálculo Diferencial – Notebook
@@ -658,109 +659,150 @@ Resuelve problemas matemáticos mediante la aplicación de límites y continuida
 
 ## Límites <a name="U2T1"></a> <small>[:arrow_heading_up:](#index)</small>
 
+Para la matemática, un límite es una magnitud a la que se acercan progresivamente los términos de una secuencia infinita de magnitudes. Un límite matemático, por lo tanto, expresa la tendencia de una función o de una sucesión mientras sus parámetros se aproximan a un cierto valor.
+
 ### Límites de funciones <a name="U2T1S1"></a> <small>[:arrow_heading_up:](#index)</small> 
+
+Dada una función $f$, nos interesará conoce el comportamiento de los valores $f(x)$ obtenidos al evaluar números cercanos a $x = a$.
+
+Por ejemplo, si $f(x) = 3x$ y evaluamos números cercanos (por ambos lados) a $x = 2$ obtenemos:
+
+|   x   |    f(x)    |
+|:-----:|:----------:|
+|  1.9  |     5.7    |
+|  1.99 |    5.97    |
+| 1.999 |    5.997   |
+|   $\textcolor{red}{2}$   | $\textcolor{red}{6 \text{ *No evaluar}}$ |
+| 2.001 |    6.003   |
+|  2.01 |    6.03    |
+|  2.1  |     6.3    |
+
+Notamos que al evaluar en $f(x) = 3x$ números cercanos a $x = 2$, los valores se acercan a $6$. Este comportamiento se denota $\lim\limits_{x \to 2} 3x = 6$
+
+Decimos que una función $f$ tiene límite $L$, cuando $x$ tiende a $a$. Esto se denota:
+
+$$
+\lim\limits_{x \to a} f(x) = L
+$$
+
+Esto significa que al evaluar en la función $f(x)$ números cercanos (por ambos lados) al número $a$, los valores se acercan a $L$.
+
+Resolver un límite como $\lim\limits_{x \to a} f(x)$ significa hallar (si es que existe) el número $L$ al que se acercan los valores de $f(x)$ cuando evaluamos números cercanos al números $a$ (por ambos lados).
+
+**Ejemplo:** Resolver $\lim\limits_{x \to 2} {x^{2} - 5x + 6 \over x - 2}$
+
+|   x   |  f(x)  |
+|:-----:|:------:|
+|  1.9  |  -1.11 |
+|  1.99 |  -1.01 |
+| 1.999 | -1.001 |
+|   2   |    ?   |
+| 2.001 | -0.999 |
+|  2.01 |  -0.99 |
+|  2.1  |  -0.9  |
+
+> En este ejemplo no se puede resolver el límite simplemente evaluando el 2 (porque no se puede evaluar el 2).
+
+Los valores se acercan a $-1$, por tanto ocurrirá que $\lim\limits_{x \to 2} {x^{2} - 5x + 6 \over x - 2} = -1$
+
+---
+
+Si no todos los límites se pueden resolver evaluando uno o varios números, ¿cómo se resuelve? Depende de la función $f(x)$. Se deben usar teoremas.
+
+> **Teorema:** Si $f(x)$ es un polinomio, entonces $\lim\limits_{x \to a} f(x) = f(a)$
+
+Este teorema nos dice que si $f(x)$ es un polinomio, el límite $\lim\limits_{x \to a} f(x)$ se resuelve simplemente evaluando $a$.
 
 ### Propiedades de los límites <a name="U2T1S2"></a> <small>[:arrow_heading_up:](#index)</small>
 
+**Teorema:** Supongamos que $\lim\limits_{x \to a} f(x)$ y $\lim\limits_{x \to a} g(x)$ existen. Entonces:
+
+1. $\lim\limits_{x \to a}[f(x) + g(x)] = \lim\limits_{x \to a} f(x) + \lim\limits_{x \to a} g(x)$
+2. $\lim\limits_{x \to a}[f(x) - g(x)] = \lim\limits_{x \to a} f(x) - \lim\limits_{x \to a} g(x)$
+3. $\lim\limits_{x \to a}[f(x)g(x)] = (\lim\limits_{x \to a}f(x))(\lim\limits_{x \to a}g(x))$
+4. $\lim\limits_{x \to a} {f(x) \over g(x)} = {\lim\limits_{x \to a} f(x) \over \lim\limits_{x \to a} g(x)}$
+> 4. Siempre que $\lim\limits_{x \to a}g(x) \not = 0$
+5. $\lim\limits_{x \to a}[cf(x)] = c(\lim\limits_{x \to a}f(x))$
+6. $\lim\limits_{x \to a}[c] = c$
+7. $\lim\limits_{x \to a}[f(x)]^{n} = (\lim\limits_{x \to a}f(x))^{n}$
+8. $\lim\limits_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim\limits_{x \to a} f(x)}$
+> 8. Si $n$ es par, se supone que $\lim\limits_{x \to a} f(x) > 0$
+
 ### Límites laterales <a name="U2T1S3"></a> <small>[:arrow_heading_up:](#index)</small>
+
+El número al que se acercan los valores $f(x)$ cuando evaluamos números cercanos y menos que $a$ se llama **límite lateral izquierdo** de $f(x)$ y se denota $\lim\limits_{x \to a^{-}}f(x)$.
+
+El número al que se acercan los valores $f(x)$ cuando evaluamos números cercanos y mayores que $a$ se llama **límite lateral derecho** de $f(x)$ y se denota $\lim\limits_{x \to a^{+}}f(x)$
+
+> **Teorema:** El límite $\lim\limits_{x \to a}f(x)$ existe si y sólo si $\lim\limits_{x \to a^{-}}f(x)$ y $\lim\limits_{x \to a^{+}}f(x)$ existen y son iguales.
+
+También podemos encontrar límites laterales considerando la gráfica de $f(x)$, por ejemplo:
+
+![graph](assets/CD-P13.png)
+
++ $\lim\limits_{x \to -2^{-}} f(x) = 1$
++ $\lim\limits_{x \to -2^{+}} f(x) = 3$
++ $\lim\limits_{x \to -2} f(x) \text{ no existe}$
++ $\lim\limits_{x \to 2^{-}} f(x) = 2$
++ $\lim\limits_{x \to 2^{+}} f(x) = 2$
++ $\lim\limits_{x \to 2} f(x) = 2$
++ $\lim\limits_{x \to 5^{-}} f(x) = 4$
++ $\lim\limits_{x \to 5^{+}} f(x) = -1$
++ $\lim\limits_{x \to 5} f(x) \text{ no existe}$
+
 
 ### Límites infinitos <a name="U2T1S4"></a> <small>[:arrow_heading_up:](#index)</small>
 
+Algunas veces el límite podría ser infinito (el límite no existe):
+
+![graph](assets/CD-P14.png)
+
++ $\lim\limits_{x \to 2^{-}}f(x) = \infin$ (no existe)
++ $\lim\limits_{x \to 2^{+}}f(x) = \infin$ (no existe)
++ $\lim\limits_{x \to 2}f(x) = \infin$ (no existe)
+
+
 ### Límites al infinito <a name="U2T1S5"></a> <small>[:arrow_heading_up:](#index)</small>
+
+Cuando la variable $x$ crece (o decrece) arbitrariamente, el comportamiento del límite puede variar.
+
+![graph](assets/CD-P15.png)
 
 ### Límites importantes <a name="U2T1S6"></a> <small>[:arrow_heading_up:](#index)</small>
 
+Algunos límites de funciones importantes en cálculo son:
+
++ $\lim\limits_{x \to \infin} sen(x)$ no existe
++ $\lim\limits_{x \to -\infin} sen(x)$ no existe
++ $\lim\limits_{x \to \infin} cos(x)$ no existe
++ $\lim\limits_{x \to -\infin} cos(x)$ no existe
++ $\lim\limits_{x \to -\infin} e^{x} = 0$
++ $\lim\limits_{x \to \infin} e^{x} = \infin$
+
+> $\lim\limits_{x \to \infin} {1 \over x^{n}} = 0$ dónde $n \in \Bbb{Q} y x^{n}$ está definido. 
+> Recurso mnemotécnico: ${1 \over \infin} = 0$
+
 ## Continuidad  <a name="U2T2"></a> <small>[:arrow_heading_up:](#index)</small>
 
+La idea de un trazo continuo es el de aquel que se realiza sin levantar el lápiz; no tiene huecos ni saltos. Esta idea se puede llevar a las funciones y sus gráficas.
+
+Una función $f$ es **continua** en el punto $x = a$ si $\lim\limits_{x \to a} f(x) = f(a)$
+
+![graph](assets/CD-P16.png)
+
+> **No es continua** (Discontinuidad de salto)
+
+Una función es continua en un intervalo $(a,b)$ si es continua en todo punto de ese intervalo.
+
+**Ejemplos de funciones continuas:**
++ **Constantes.** Son continuas en todo $\Bbb{R}$. Ejemplo $f(x) = 5$
++ **Polinomios.** Son continuos en todo $\Bbb{R}$. Ejemplo $f(x) = 3x^{2} + x - 3$
++ **Exponenciales.** Son continuas en todo $\Bbb{R}$. Ejemplo $f(x) = e^{x}$
++ **Logarítmicas.** Son continuas en su Dominio. Ejemplo $f(x) = ln(x)$
++ **Trigonométricas.** Son continuas en su Dominio. Ejemplo $f(x) = cos(x)$
++ **Racionales.** Son continuas en su Dominio. Ejemplo $f(x) = {x^{2} + x + 1 \over x - 2}$
+
+> **Teorema:** La suma, la resta, la multiplicación, división, y composición de funciones continuas es continua.
+
 # Unidad 3 <a name="U3"></a> <small>[:arrow_heading_up:](#index)</small>
-
-## Definición de la derivada
-
-> La **derivada** de una función es un número, que resulta de la aplicación de cierto límite.
-
-&nbsp;
-
-Si $f(x)$ es una función, entonces la *derivada* de $f(x)$ en el punto $a$ se define así:
-
-$$
-f'(a) = \lim\limits_{h \to 0} \frac{f(a+h)-f(a)}{h} 
-$$
-
-O así:
-
-$$
-f'(a) = \lim\limits_{t \to a} \frac{f(t)-f(a)}{t-a}
-$$
-
-&nbsp;
-
-Si $f(x)=x^2$ y $a=4$.
-
-| $f'(a) = \lim\limits_{h \to 0} \frac{f(a+h)-f(a)}{h}$ | $f'(a) = \lim\limits_{t \to a} \frac{f(t)-f(a)}{t-a}$ |
-| :--- | :--- |
-| $f'(4) = \lim\limits_{h \to 0} \frac{f(4+h)-f(4)}{h}$ |$f'(4) = \lim\limits_{t \to 4} \frac{f(t)-f(4)}{t-4}$ |
-| $= \lim\limits_{h \to 0} \frac{(4+h)^2-16}{h}$ | $= \lim\limits_{t \to 4} \frac{t^2-16}{t-4}$ |
-| $= \lim\limits_{h \to 0} \frac{\cancel{16}+8h+h^2-\cancel{16}}{h}$ | $= \lim\limits_{t \to 4} \frac{(t+4)\cancel{(t-4)}}{\cancel{(t-4)}}$ |
-| $= \lim\limits_{h \to 0} \frac{\cancel{h}(8+h)}{\cancel{h}}$ | $= \lim\limits_{t \to 4} (t+4) = 8$ |
-| $= \lim\limits_{h \to 0}(8+h)=8$ | |
-
-
-&nbsp;
-
-## Fórmulas de Derivación
-
-Las fórmulas de derivación nos servirá para poder calcular las derivadas sin tener que resolver los límites.
-
-| **Función** | **Derivada** |
-| :---: | :---:|
-| $f(x) = c$ | $f'(x) = 0$ |
-| $f(x) = x$ | $f'(x) = 1$ |
-| $f(x) = x^n$ | $f'(x) = nx^{n-1}$ |
-| $f(x) = \sqrt{x}$ | $f'(x) = \frac{1}{2\sqrt{x}}$ |
-| $f(x) = sen(x)$ | $f'(x) = cos(x)$ |
-| $f(x) = cos(x)$ | $f'(x) = -sen(x)$|
-| $f(x) = tan(x)$ | $f'(x) = sec^{2}(x)$|
-| $f(x) = e^{x}$ | $f'(x) = e^{x}$|
-| $f(x) = ln(x)$ | $f'(x) = \frac{1}{x}$|
-
-## Reglas de Derivación
-
-Las fórmulas anteriores son importantes, pero no son suficientes pues no podríamos conocer las derivadas de funciones un poco más complejas. 
-
-En este momento introducimos una nueva notación para la derivada: 
-
-$$
-f' =\frac{df}{dx} \text{ o equivalentemente } f'(x)=\frac{df}{dx}(x) 
-$$
-
-Usamos esta notación nueva para expresar las siguientes *Reglas de Derivación*:
-
-| $\frac{d}{dx}[cf] = c(\frac{df}{dx})$ | --- |
-| :---: | :---: |
-
-
-## Ejercicios de Derivadas
-
-- a) $\textcolor{gold}{f(x) = 4x^5 - 3x^4 - 6x^3 + 8x^2 + x - 4}$
-  1. $20x^{4} - 12x^{3} - 18x^{2} + 16x + 1 - \cancel{0}$
-- b) $\textcolor{gold}{f(x) = \sqrt{2}e^{3}}$
-  1. $0$
-- c) $\textcolor{gold}{f(x) = cos(t) + y^{3}}$
-  1. $0$
-- d) $\textcolor{gold}{f(x) = 4ln(x) - 3 \sqrt{x}}$
-  1. $4(\frac{1}{x}) - 3(\frac{1}{2\sqrt{x}})$
-  2. $\frac{4}{x} - \frac{3}{2\sqrt{x}}$
-- e) $\textcolor{gold}{f(x) = \frac{5}{x^{2}}}$
-  1. $\frac{(0)(x^{2})-(2x)(5)}{(x^{2})^{2}}$
-  2. $\frac{\cancel{(0)(x^{2})}-(10x)}{x^{4}}$
-  3. $\frac{-10x}{x^{4}}$
-  4. $-10x^{-3}$
-- f) $\textcolor{gold}{\sqrt[3]{x^{2}}}$
-  1. $x^{\frac{2}{3}}$
-  2. $\frac{2}{3}x^{-\frac{1}{3}}$
-- g) $\textcolor{gold}{x^{3}e^{x}}$
-  1. $3x^{2}e^{x} + x^{3}e^{x}$
-
-## La Derivada como pendiente de recta tangente
-
 
