@@ -3,7 +3,7 @@ pinned: true
 tags: [Notebook, School]
 title: Álgebra Superior – Notebook
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-02-19T22:32:14.039Z'
+modified: '2020-02-27T17:18:56.000Z'
 ---
 
 # Álgebra Superior – Notebook
@@ -15,13 +15,14 @@ Libreta para la clase de *Álgebra Superior*.
 1. [Unidad 2](#U2)
    1. [Subconjuntos de conjuntos y conjunto potencia](#T1)
       1. [Subconjuntos](#T1S1)
-      2. [Conjunto potencia](#T1S1)
+      2. [Conjunto potencia](#T1S2)
    2. [Operaciones con conjuntos](#T2)
       1. [Unión](#T2S1)
       2. [Intersección](#T2S2)
       3. [Complemento](#T2S3)
       4. [Diferencia](#T2S4)
    3. [Demostraciones](#E1)
+2. [Unidad 3](#U3)
 
 # Unidad 2 <a name="U2"></a> <small>[:arrow_heading_up:](#index)</small>
 
@@ -179,3 +180,39 @@ $$
    \therefore \space A \subset (B \cap C) \text{ y ya!} 
    $$
 
+3) Demuestra que $P(A \cap B) \subset P(A) \cap P(B)$ 
+
+$Demostración$
+
+$$
+\text{Sea } x \in P(A \cap B) \rArr x \subset A \cap B \\
+\ \\
+\text{pero } A \cap B \subset A \text{ y } A \cap B \subset B \\
+\ \\
+\text{Entonces, por la propiedad transitiva de la inclusión, tenemos que } x \subset A y x \subset B \\
+\rArr x \in P(A) \text{ y } x \in P(B) \\
+\rArr x \in P(A) \cap P(B) \\
+\ \\
+\therefore P(A \cap B) \subset P(A) \cap P(B) \text{ y ya!}
+$$
+
+# Unidad 3 <a name="U3"></a> <small>[:arrow_heading_up:](#index)</small>
+
+## Relaciones <a name="U3T1"></a> <small>[:arrow_heading_up:](#index)</small>
+
+Sean $A$ y $B$ conjuntos. El producto cartesiano de $A$ y $B$, denotado $A \times B$, es el conjunto de todas las parejas ordenadas $(a,b)$ tales $a \in A$ y $b \in B$, es decir $A \times B = \{(a,b) \space | \space a \in A \land b \in B\}$
+
+> También se le llama producto cruz entre conjuntos, por la notación.
+
+**Ejemplo:**
+
+1. Si  $A = \{1,2,3\}$ y $B = \{a,b\}$, entonces
+    + $A \times B = \{(1,a), (1,b), (2,a), (2,b), (3,a), (3,b)\}$
+    + $B \times A = \{(a,1), (a,2), (a,3), (b,1), (b,2), (b,3)\}$
+
+2. $A = \Bbb{N}$ y $B = \{-1,0,1\}$, entonces
+    + $A \times B = \{(1,-1), (1,0), (1,1), (2,-1), (2,0), (2,1), (3,-1(), (3,0), (3,1), ...\}$
+    + $B \times A = \{(-1,1), (-1,2), (-1,3), ..., (0,1), (0,2), (0,3), ..., (1,1), (1,2), (1,3), ...\}$
+    
+3. $A = B = [0,1]$, entonces
+    + $A \times B = B \times A = \{(x, y) \in \Bbb{R}^{2} \space | \space x \in [0,1] \land y \in [0,1]\}$

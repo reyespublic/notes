@@ -3,7 +3,7 @@ pinned: true
 tags: [Notebook, School]
 title: Matemáticas Discretas – Notebook
 created: '2020-02-16T06:42:59.547Z'
-modified: '2020-02-19T22:32:18.555Z'
+modified: '2020-02-27T19:40:41.776Z'
 ---
 
 # Matemáticas Discretas – Notebook
@@ -130,5 +130,22 @@ $$
 a_{n} = a_{n-1} + a_{n-2} + a_{n-5} + a_{n-5}
 $$
 
+### Relaciones de recurrencia lineales no homogénicas con coeficientes constantes.
+
+$$
+a_{n} = \underbrace{C_{1}a_{n-1} + C_{2}a_{n-2} + ... + C_{k}a_{n-k}}_{\text{Parte homogénea asociada}} + \underbrace{f(n)}_{\text{Parte no homogénica}}
+$$
+
+> Siempre que sean sumas de los términos se considera *lineal*
+
+| Término de mayor orden de $F(n)$ | $A_{n}^{(p)}$ |
+| :----: | :-----------: | 
+| $C$    | $A$           |
+| $n$    | $An + B$   |
+| $n^{2}$| $An^{2} + Bn + C$ |
+| $n^{t}$| $A_{t}n^{t} + A_{t-1}n^{t-1} + ... + A_{1}n + A_{0}$ |
+| $r^{n}$| $Ar^{n}$ |
+| $n^{t}r^{n}$ | $r^{n}(A_{t}n^{t} + A_{t-1}n^{t-1} + ... + A_{1}n + A_{0})$ |
 
 
+  
