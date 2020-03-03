@@ -1,10 +1,9 @@
 ---
-attachments: [Clipboard_2020-02-27-08-55-19.png, Clipboard_2020-02-27-09-05-48.png, Clipboard_2020-02-27-09-18-19.png]
 pinned: true
 tags: [Notebook, School]
 title: Cálculo Diferencial – Notebook
 created: '2020-02-16T06:42:49.001Z'
-modified: '2020-02-27T15:33:06.110Z'
+modified: '2020-03-02T15:52:11.639Z'
 ---
 
 # Cálculo Diferencial – Notebook
@@ -57,6 +56,22 @@ Libreta para la materia de *Cálculo Diferencial*.
       6. [Límites importantes](#U2T1S6)
    2. [Continuidad](#U2T2)
 3. [Unidad 3](#U3)
+   1. [Derivación](#U3T1)
+      1. [Definición de derivada](#U3T1S1)
+      2. [Cálculo de la derivada con fórmulas](#U3T1S2)
+      3. [Fórmulas de derivación](#U3T1S3)
+      4. [Reglas de derivación](#U3T1S4)
+      5. [Cálculo de derivadas](#U3T1S5)
+      6. [Fórmulas adicionales de derivación](#U3T1S6)
+      7. [Interpretación de la derivada](#U3T1S7)
+      8. [La derivada como pendiente de recta tangente](#U3T1S8)
+      9. [La derivada como razón de cambio](#U3T1S9)
+      10. [Regla de la cadena](#U3T1S10)
+      11. [Derivación Implícita](#U3T1S11)
+      12. [Derivadas de orden superior](#U3T1S12)
+      13. [Regla de L'Hopital](#U3T1S13)
+      14. [Teorema de Rolle](#U3T1S14)
+      15. [Teorema del valor medio](#U3T1S15)
 
 # Unidad 1 <a name="U1"></a> <small>[:arrow_heading_up:](#index)</small>
 
@@ -805,4 +820,92 @@ Una función es continua en un intervalo $(a,b)$ si es continua en todo punto de
 > **Teorema:** La suma, la resta, la multiplicación, división, y composición de funciones continuas es continua.
 
 # Unidad 3 <a name="U3"></a> <small>[:arrow_heading_up:](#index)</small>
+
+<details>
+<summary open>Objetivos de la unidad</summary>
+<markdown>
+Resuelve los problemas matemáticos mediante la aplicación de diferenciación de funciones con el uso de los diferentes registros de representación mediante herramientas tecnológicas.
+</markdown>
+</details>
+
+## Derivación <a name="U3T1"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Definición de derivada <a name="U3T1S1"></a> <small>[:arrow_heading_up:](#index)</small>
+
+La **derivada** de una función (en un punto) es un número, que resulta de la aplicación de cierto límite. En los siguientes subtemas veremos *cómo calcularlo más fácilmente*, y más adelante, *cómo se interpreta* ese número.
+
+Si $f(x)$ es una función, entonces la **derivada** de $f(x)$ en el punto $a$ se define así:
+
+$$
+f'(a) = \lim\limits_{h \to 0} {f(a+h)-f(a) \over h}
+$$
+
+<center>
+o así:
+</center>
+
+$$
+f'(a) = \lim\limits_{t \to a} {f(t) - f(a) \over t - a}
+$$
+
+**Ejemplo:** si $f(x) = x^{2}$ podemos calcular la derivada de $f(x)$ en el punto $4$ con la primera fórmula:
+
+$$
+\begin{aligned}
+f'(4) &= \lim\limits_{h \to 0} {f(4 + h) - f(4) \over h} \\
+&= \lim\limits_{h \to 0} {(4+h)^{2} - (4)^{2} \over h} \\
+&= \lim\limits_{h \to 0} {h^{2} + 8h + 16 - 16 \over h} \\
+&= \lim\limits_{h \to 0} {h^{2} + 8h \over h} \\
+&= \lim\limits_{h \to 0} {\cancel{h}(h+8) \over \cancel{h}} \\
+&= \lim\limits_{h \to 0} {(h+8)=8}
+\end{aligned}
+$$
+
+> Si lo hubiéramos resuelto con la otra fórmula llegaríamos al mismo resultado.
+
+### Cálculo de la derivada con fórmulas <a name="U3T1S2"></a> <small>[:arrow_heading_up:](#index)</small>
+
+Dada una función $f(x)$, el cálculo de la derivada $f'(a)$ es complicado porque se tiene que resolver un límite. Por ejemplo, si $f(x) = x^{2} + cos(x)$ y se deseara calcular $f'(2)$, tendríamos que resolver el límite:
+
+$$
+f'(2) = \lim\limits_{h \to 0} {f(2+h)-f(2) \over h} = \lim\limits_{h \to 0} {(2+h)^{2} + cos(2+h) - (4 + cos(2)) \over h} = \text{ ?}
+$$
+
+Pero hemos notado que si $f(x) = x^{2}$ entonces:
+
+$$
+f'(-2) = \lim\limits_{h \to 0} {f(2 + h) - f(2) \over h} = \dots = -4 \\
+f'(0) = \lim\limits_{h \to 0} {f(0 + h) - f(0) \over h} = \dots = 0 \\
+f'(4) = \lim\limits_{h \to 0} {f(4 + h) - f(4) \over h} = \dots = 8 \\
+f'(6) = \lim\limits_{h \to 0} {f(6 + h) - f(6) \over h} = \dots = 12 \\
+f'(10) = \lim\limits_{h \to 0} {f(10 + h) - f(10) \over h} = \dots = 20
+$$
+
+> Podemos preguntarnos: Si $f(x) = x^{2}$, ¿$f'(a)$ siempre será el número doble, es decir $2a$?
+
+### Fórmulas de derivación <a name="U3T1S3"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Reglas de derivación <a name="U3T1S4"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Cálculo de derivadas <a name="U3T1S5"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Fórmulas adicionales de derivación <a name="U3T1S6"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Interpretación de la derivada <a name="U3T1S7"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### La derivada como pendiente de recta tangente <a name="U3T1S8"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### La derivada como razón de cambio <a name="U3T1S9"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Regla de la cadena <a name="U3T1S10"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Derivación Implícita <a name="U3T1S11"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Derivadas de orden superior <a name="U3T1S12"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Regla de L'Hopital <a name="U3T1S13"></a> <small>[:arrow_heading_up:](#index)</small>
+ 
+### Teorema de Rolle <a name="#U3T1S14"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Teorema del valor medio <a name="#U3T1S15"></a> <small>[:arrow_heading_up:](#index)</small>
 
