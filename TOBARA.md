@@ -1,7 +1,7 @@
 ---
 title: TOBARA
 created: '2020-03-06T04:28:42.868Z'
-modified: '2020-03-06T04:49:59.684Z'
+modified: '2020-03-06T04:52:03.055Z'
 ---
 
 # TOBARA
@@ -52,3 +52,5 @@ Las herramientas a utilizar son:
 + Visual Studio Code
 
 La metodología utilizar será: **SCRUM**
+
+[Calendario de Actividades](https://docs.google.com/spreadsheets/d/19GiYgRjEw2wR_1tkNRXZim43aYvsOO6m2VIvfn3Nwo0/edit#gid=0)
