@@ -1,7 +1,7 @@
 ---
 title: MD – Aplicación de las Relaciones de Recurrencia
 created: '2020-03-05T19:19:47.186Z'
-modified: '2020-03-07T02:16:13.604Z'
+modified: '2020-03-07T20:28:24.200Z'
 ---
 
 # MD – Aplicación de las Relaciones de Recurrencia
@@ -103,4 +103,9 @@ $$
 De esta forma damos con la fórmula cerrada de la relación de recurrencia.
 
 En conclusión podemos ver como en este ejercicio para encontrar la relación de recurrencia de la sucesión de Fibonacci logramos tanto encontrar su **R.R** como su **Fórmula cerrada**. Para llegar a ese resultado de una forma óptima usamos las fórmulas establecidas (como el método de la ecuación característica).
+
+## Fotos
+![imagen](assets/MD-P1.png)
+![imagen](assets/MD-P2.png)
+![imagen](assets/MD-P3.png)
 
