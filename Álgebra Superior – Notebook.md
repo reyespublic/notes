@@ -3,7 +3,7 @@ pinned: true
 tags: [Notebook, School]
 title: Álgebra Superior – Notebook
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-03-10T18:33:45.905Z'
+modified: '2020-03-10T18:46:04.143Z'
 ---
 
 # Álgebra Superior – Notebook
@@ -236,9 +236,45 @@ $$
 3. $A = B = [0,1]$, entonces
     + $A \times B = B \times A = \{(x, y) \in \Bbb{R}^{2} \space | \space x \in [0,1] \land y \in [0,1]\}$
 
+> **Observación.** En los ejemplos anteriores notamos que en algunos casos (ejemplos 1, 2, 4) $A \times B \not = B \times A$, y solamente cuando $A = B$ (ejemplos 3 y 5), se tiene que $A \times B = B \times A$
+
+**Propiedades:**
+
++ $A \not = \varnothing \land B \not = \varnothing \iff A \times B \not = \varnothing$
+
++ $A = \varnothing \lor B = \varnothing \iff A \times B = \varnothing$
+
++ $(A_{1} \times B_{1}) \cap (A_{2} \times B_{2}) = (A_{1} \cap A_{2}) \times (B_{1} \cap B_{2})$
+
++ $(A_{1} \times B) \cap (A_{2} \times B) = (A_{1} \cap A_{2}) \times B$
+
++ $(A \times B_{1}) \cap (A \times B_{2}) = A \times (B_{1} \cap B_{2})$
+
++ $(A_{1} \times B) \cup (A_{2} \times B) = (A_{1} \cup A_{2}) \times B$
+
++ $(A \times B_{1}) \cup (A \times B_{2}) = A \times (B_{1} \cup B_{2})$
+
++ $A_{1} \subset A_{2} \land B_{1} \subset B_{2} \rArr (A_{1} \times B_{1}) \subset (A_{2} \times B_{2})$
+
 ### Dominio, Codominio e Imagen de una relación <a name="U3T1S2"></a> <small>[:arrow_heading_up:](#index)</small>
 
+Sean $A$ y $B$ conjuntos. Una relación entre $A$ y $B$ es un subconjunto de $A \times B$.
 
+Sea $R \subset A \times B$ una relación entre $A$ y $B$.
+
++ a) El codominio de $R$ es $B$
++ b) El dominio de $R$ es: $D_{R} = \{a \in A \space | \space \exists \space b \in B, (a,b) \in R\}$
++ c) La imagen de $R$ es: $I_{R} = \{b \in B \space | \space \exists \space a \in A, (a,b) \in R\}$
+
+**Observación:**
+
++ a) $D_{R} \subset A$
++ b) $I_{R} \subset B$
++ c) La imagen de $R$ también se conoce como rango de $R$
+
+**Ejemplo:**
+
+Sean $A = \{2,3,4,5,6,7,9,10\}$ y $B = \{0,1,2,3,4\}$ 
 
 ### Tipos de Relaciones <a name="U3T1S3"></a> <small>[:arrow_heading_up:](#index)</small>
 
