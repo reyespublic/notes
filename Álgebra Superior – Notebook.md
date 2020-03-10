@@ -3,7 +3,7 @@ pinned: true
 tags: [Notebook, School]
 title: Álgebra Superior – Notebook
 created: '2020-02-16T06:42:21.402Z'
-modified: '2020-02-27T17:18:56.000Z'
+modified: '2020-03-10T18:33:45.905Z'
 ---
 
 # Álgebra Superior – Notebook
@@ -23,6 +23,19 @@ Libreta para la clase de *Álgebra Superior*.
       4. [Diferencia](#T2S4)
    3. [Demostraciones](#E1)
 2. [Unidad 3](#U3)
+   1. [Relaciones](#U3T1)
+      1. [Producto Cartesiano](#U3T1S1)
+      2. [Dominio, Codominio e Imagen de una relación](#U3T1S2)
+      3. [Tipos de Relaciones](#U3T1S3)
+      4. [Relaciones de equivalencia](#U3T1S4)
+      5. [Clases de Equivalencia](#U3T1S5)
+   2. [Funciones](#U3T2)
+      1. [Dominio, Imagen y Codominio de una Función](#U3T2S1)
+      2. [Tipos de Funciones: Inyectiva, Suprayectiva y Biyectiva](#U3T2S2)
+      3. [Composición de Funciones](#U3T2S3)
+      4. [La inversa de una Función](#U3T2S4)
+      5. [Cardinalidad de Conjuntos](#U3T2S5)
+
 
 # Unidad 2 <a name="U2"></a> <small>[:arrow_heading_up:](#index)</small>
 
@@ -200,7 +213,13 @@ $$
 
 ## Relaciones <a name="U3T1"></a> <small>[:arrow_heading_up:](#index)</small>
 
-Sean $A$ y $B$ conjuntos. El producto cartesiano de $A$ y $B$, denotado $A \times B$, es el conjunto de todas las parejas ordenadas $(a,b)$ tales $a \in A$ y $b \in B$, es decir $A \times B = \{(a,b) \space | \space a \in A \land b \in B\}$
+### Producto Cartesiano <a name="U3T1S1"></a> <small>[:arrow_heading_up:](#index)</small>
+
+Sean $A$ y $B$ conjuntos. El producto cartesiano de $A$ y $B$, denotado $A \times B$, es el conjunto de todas las parejas ordenadas $(a,b)$ tales $a \in A$ y $b \in B$, es decir:
+
+$$
+A \times B = \{(x,y) \space | \space x \in A \land y \in B\}
+$$
 
 > También se le llama producto cruz entre conjuntos, por la notación.
 
@@ -216,3 +235,27 @@ Sean $A$ y $B$ conjuntos. El producto cartesiano de $A$ y $B$, denotado $A \time
     
 3. $A = B = [0,1]$, entonces
     + $A \times B = B \times A = \{(x, y) \in \Bbb{R}^{2} \space | \space x \in [0,1] \land y \in [0,1]\}$
+
+### Dominio, Codominio e Imagen de una relación <a name="U3T1S2"></a> <small>[:arrow_heading_up:](#index)</small>
+
+
+
+### Tipos de Relaciones <a name="U3T1S3"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Relaciones de equivalencia <a name="U3T1S4"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Clases de Equivalencia <a name="U3T1S5"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Funciones <a name="U3T2"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Dominio, Imagen y Codominio de una Función <a name="U3T2S1"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Tipos de Funciones: Inyectiva, Suprayectiva y Biyectiva <a name="U3T2S2"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Composición de Funciones <a name="U3T2S3"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### La inversa de una Función <a name="U3T2S4"></a> <small>[:arrow_heading_up:](#index)</small>
+
+### Cardinalidad de Conjuntos <a name="U3T2S5"></a> <small>[:arrow_heading_up:](#index)</small>
+
+

@@ -1,7 +1,8 @@
 ---
+tags: [School]
 title: MD – Aplicación de las Relaciones de Recurrencia
 created: '2020-03-05T19:19:47.186Z'
-modified: '2020-03-07T20:28:24.200Z'
+modified: '2020-03-10T15:06:36.054Z'
 ---
 
 # MD – Aplicación de las Relaciones de Recurrencia
