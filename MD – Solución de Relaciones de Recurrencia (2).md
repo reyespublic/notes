@@ -1,7 +1,7 @@
 ---
 title: MD – Solución de Relaciones de Recurrencia
 created: '2020-03-10T15:07:26.297Z'
-modified: '2020-03-11T05:05:41.125Z'
+modified: '2020-03-11T05:38:27.024Z'
 ---
 
 # MD – Solución de Relaciones de Recurrencia
@@ -23,6 +23,8 @@ s_{3} = 3n \\
 \textcolor{#69a847}{s_{n} = 5n}
 $$
 
+> Se anexan las fotos de los apuntes y procedimientos
+
 2. $b_{n} = 3b_{n-1}$ con $b_{1} = 5$
 
 $$
@@ -31,12 +33,16 @@ $$
 \textcolor{#69a847}{b_{n} = 3^{n-1} \cdot 5}
 $$
 
+> Se anexan las fotos de los apuntes y procedimientos
+
 3. $f_{n} = nf_{n-1}$ con $f_{1} = 1$
 
 $$
 \text{Dado el caso 2 que nos dice que: } a_{n} = g(n)a_{n-1} = a_{1}\prod^{n}_{k=2}g(k)\\
 f_{n} = 1\prod^{n}_{k=2}k \implies \textcolor{#69a847}{n!}
 $$
+
+> Se anexan las fotos de los apuntes y procedimientos
 
 4. $s_{n} = ns_{n-1} + n!$ con $s_{1} = 1$
 
@@ -55,6 +61,8 @@ n! (2 + \sum^{n}_{k=2}(k! {n! \over 2})) \\
 \textcolor{#69a847}{n! (2 +  {1 \over 2} \sum^{n}_{k=2}k!)}
 $$
 
+> Se anexan las fotos de los apuntes y procedimientos
+
 5. $P_{n} = 3^{n+1}P_{n-1} + n$ con $P_{1} = 2$
 
 $$
@@ -64,6 +72,8 @@ $$
 \space \\
 \textcolor{#69a847}{2\cdot3 \prod^{n}_{k=2}3^{k} + (\sum^{n-1}_{k=2}(k \prod^{n}_{r=k+1}3^{r+1})) + n} \\
 $$
+
+> Se anexan las fotos de los apuntes y procedimientos
 
 6. Un email de tipo SPAM que contiene un virus se envia a $1000$ direcciones electrónicas. Después de un segundo, cada máquina receptora envía $10$ nuevos emails con el virus después de lo cual el virus se deshabilita a si mismo en la máquina receptora.
 
@@ -85,6 +95,8 @@ $$
    \textcolor{#69a847}{10^{23}}
    $$
 
+   > Se anexan las fotos de los apuntes y procedimientos
+
 7. A un crédito de $5000$ pesos se le carga una tasa del $12%$ de interés anual. UN pago de $80$ pesos se realiza una vez cada mes.
 
   + Escriba una relación de recurrencia para el saldo restante del crédito al comienzo del mes $n$.
@@ -104,6 +116,8 @@ $$
    $$
    \textcolor{#69a847}{1.01^{19} \cdot 5000 - 80 \sum^{18}_{k=0}1.01^{k}}
    $$
+
+   > Se anexan las fotos de los apuntes y procedimientos
 
 8. $S_{n} = S_{n-1} + 2S_{n-2}$ con $S_{1} = 4$ y $S_{2} = -2$
 
@@ -128,6 +142,8 @@ A = 4 + 2(-1) \implies 4 - 2 \implies \textcolor{gold}{A = 2} \\
 \space \\
 \textcolor{#69a847}{a_{n} = 2(1)^{n} - 1(-2)^{n}}
 $$
+
+> Se anexan las fotos de los apuntes y procedimientos
 
 9. $S_{n} = -10S_{n-1} - 25S_{n-2}$ con $S_{1} = -10$ y $S_{2} = 40$
 
@@ -165,6 +181,8 @@ $$
 \textcolor{69a847}{{12 \over 5}(-5)^{n} -{2 \over 5}n(-5)^{n}}
 $$
 
+> Se anexan las fotos de los apuntes y procedimientos
+
 10. $P_{n} = 2P_{n/2} + 3$ con $n = 2^{m}$ y $P_{1} = 1$
 
 $$
@@ -178,6 +196,8 @@ P_{8} = 2(2(2(1)+3)+3)+3 \\
 \space \\
 \textcolor{69a847}{2^{m} + 3 \sum^{m-1}_{k=0}2^{k}} \text{ y } \textcolor{69a847}{m = log_{2}n}
 $$
+
+> Se anexan las fotos de los apuntes y procedimientos
 
 11. $4a_{n} = -4a_{n-2} + (n+1)2^{n}$
 
@@ -207,6 +227,8 @@ D = - {4 \over 3 \cdot 24} = \textcolor{gold}{-{1 \over 18}} \\
 \space \\
 \textcolor{69a847}{A(0 + i)^{n} + B(0 - i)^{n} + 2^{n}(-{n \over 6} - {1 \over 18})}
 $$
+
+> Se anexan las fotos de los apuntes y procedimientos
 
 12. $a_{n+2} + 3a_{n+1} + 2a_{n} = 3^{n}$ con $a_{0}$ y $a_{1} = 1$
 
@@ -248,8 +270,15 @@ B = - {9 \over 20} - {16 \over 20} \\
 \textcolor{69a847}{{4 \over 5}(-2)^{n} - {5 \over 4}(-1)^{n} + {9 \over 20} \cdot 3^{n}}
 $$
 
+> Se anexan las fotos de los apuntes y procedimientos
+
 13. $a_{n} + 4a_{n-1} + 4a_{n-2} = 7n(-2)^{n}$ con $a_{0} = 1$ y $a_{1} = 2$
 
+$$
+\textcolor{69a847}{(-2)^{n} - {20n(-2)^{n} \over 3} + n^{2}(-2)^{n}({7n \over 6} + {7 \over 2})}
+$$
+
+> Se anexan las fotos de los apuntes y procedimientos
 
 14. Determine la solución general de la relación de recurrencia $a_{n} = -5a_{n-1} - 6a_{n-2} + 42(4^{n})$
 
