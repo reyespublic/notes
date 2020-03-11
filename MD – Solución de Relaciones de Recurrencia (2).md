@@ -1,10 +1,16 @@
 ---
-title: MD – Tarea en equipos
+title: MD – Solución de Relaciones de Recurrencia
 created: '2020-03-10T15:07:26.297Z'
-modified: '2020-03-11T03:03:08.283Z'
+modified: '2020-03-11T05:05:41.125Z'
 ---
 
-# MD – Tarea en equipos
+# MD – Solución de Relaciones de Recurrencia
+
+### Jorge Vázquez, Jorge Reyes y Augusto Reyes
+
+Marzo 6, 2020
+
+---
 
 1. $s_{n} = s_{n-1} + 5$ con $s_{1} = 5$
 
@@ -40,18 +46,13 @@ a_{n} = a_{1} \prod^{n}_{k=2}g(k) + \Big(\sum^{n-1}_{k=2}f(k) \prod^{n}_{r=k+1}g
 \space \\
 s_{n} = (1) \prod^{n}_{k=2}k + (\sum^{n-1}_{k=2}(k! \prod^{n}_{r=k+1}r))+n! \\
 \space \\
-\Downarrow
+\Downarrow \\
 \space \\
-s_{n} = (1) \prod^{n}_{k=2}k + (\sum^{n-1}_{k=2}(k!(n-1)!))+n!
-\space \\
-\Downarrow
+n! + (\sum^{n}_{k=2}(k! \prod^{n}_{r=k+1})) + n! \\
 \space \\
-2(n!) + (n-1)! \sum^{n-1}_{k=2}k! \\
-2(n)(n-1)! + (n-1)! \sum^{n-1}_{k=2}k! \\
-\space \\
-\Downarrow
+n! (2 + \sum^{n}_{k=2}(k! {n! \over 2})) \\
 \space \\
-\textcolor{#69a847}{(n-1)!(2n + \sum^{n-1}_{k=2}k!)}
+\textcolor{#69a847}{n! (2 +  {1 \over 2} \sum^{n}_{k=2}k!)}
 $$
 
 5. $P_{n} = 3^{n+1}P_{n-1} + n$ con $P_{1} = 2$
@@ -170,33 +171,109 @@ $$
 P_{8} = 2P_{4} + 3 \\
 P_{8} = 2(2P_{2} + 3) + 3 \\
 P_{8} = 2(2(2P_{1}+3)+3)+3 \\
-P_{8} = 2(2(2(1)+3)+3)+3
+P_{8} = 2(2(2(1)+3)+3)+3 \\
+\space \\
+2^{3} + 3 \cdot 2^{2} + 3 \cdot 2^{1} \\
+2^{n} + 3 \cdot 2^{n-1} + 3 \cdot 2^{n-2} + 3 \cdot 2^{n-3} \\
+\space \\
+\textcolor{69a847}{2^{m} + 3 \sum^{m-1}_{k=0}2^{k}} \text{ y } \textcolor{69a847}{m = log_{2}n}
 $$
 
 11. $4a_{n} = -4a_{n-2} + (n+1)2^{n}$
 
+$$
+4a_{n} = -4a_{n-2} + (n+1)2^{n} \\
+4x^{2} = -4 \\
+x^{2} = -1 \\
+x = \pm \sqrt{-1} \\
+x = \pm i \\
+\space \\
+Ai^{n} + B(-i)^{n} \\
+\space \\
+F(n) = (n+1)2^{n} \\
+a_{n}^{(p)} = 2^{n}(Cn+D) \\
+\space \\
+4(2^{n}(Cn+D)) = -4(2^{n-2}(C(n-2) +D)) + (n+1)2^{n} \\
+4(2^{n}(Cn+D)) = -4(2(Cn - 2c +D)) + (n+1)2^{n} \\
+16Cn + 8Cn + 16C + 16D + 8D + 4n + 4 = 0\\
+\space \\
+n(16C + 8C + 4) = 0 \\
+24C = -4 \\
+\textcolor{gold}{C = -{1 \over 6}} \\
+\space \\
+16C + 24D + 4 = 0 \\
+-{8 \over 3} + 24D = - 4 \\
+D = - {4 \over 3 \cdot 24} = \textcolor{gold}{-{1 \over 18}} \\
+\space \\
+\textcolor{69a847}{A(0 + i)^{n} + B(0 - i)^{n} + 2^{n}(-{n \over 6} - {1 \over 18})}
+$$
+
 12. $a_{n+2} + 3a_{n+1} + 2a_{n} = 3^{n}$ con $a_{0}$ y $a_{1} = 1$
+
+$$
+a_{n} + 3a_{n-1} + 2a_{n-2} = 3^{n} \\
+a_{n} = -3a_{n-1} - 2a_{n-2} + 3^{n} \\
+x^{2} = -3x -2 \\
+x^{2} + 3x + 2 \\
+(x+2)(x+1) 
+\begin{cases}
+x_{1} = -2 \\
+x_{2} = -1
+\end{cases}\\
+\space \\
+A(-2)^{n} + B(-1)^{n} \\
+\space \\
+F(n) = 3^{n} \\
+A_{n}^{(p)} =3^{n} C \\
+\space \\
+3^{n} C = -3(3^{n-1}C) -2(3^{n-2}) + 3^{n} \\
+3^{2} C = -3(3C) - 2(C) + 3^{2} \\
+20C = 9 \\
+\textcolor{gold}{C = {9 \over 20}} \\
+\space \\
+A(-2)^{n} + B(-1)^{n} + {9 \over 20} \cdot 3^{n} \\
+\space \\
+A + B = - {9 \over 20} \\
+-2A -B = - {7 \over 20} \\
+\Downarrow \\
+-A = - {16 \over 20} \\
+\textcolor{gold}{A = {16 \over 20}} \\
+\space \\
+{16 \over 20} + B = - {9 \over 20} \\
+\space \\
+B = - {9 \over 20} - {16 \over 20} \\
+\space \\
+\textcolor{gold}{B = - {5 \over 4}} \\
+\space \\
+\textcolor{69a847}{{4 \over 5}(-2)^{n} - {5 \over 4}(-1)^{n} + {9 \over 20} \cdot 3^{n}}
+$$
 
 13. $a_{n} + 4a_{n-1} + 4a_{n-2} = 7n(-2)^{n}$ con $a_{0} = 1$ y $a_{1} = 2$
 
-$$
-x^{2} + 4x + 4 = 0 \\
-\space \\
-(x+2)^{2} 
-\begin{cases}
-x_{1} = -2 \\
-x_{2} = -2
-\end{cases} \\
-\space \\
-A(-2)^{n} + Bn(-2)^{n} \\
-\space \\
-\Downarrow \\
-\space \\
-F(n) = n(-2)^{n} \\
-\space \\
-a_{n}^{p} = n^{2}(-2)^{n}(Cn + D)
-$$
 
 14. Determine la solución general de la relación de recurrencia $a_{n} = -5a_{n-1} - 6a_{n-2} + 42(4^{n})$
 
+$$
+x^{2} + 5x + 6 = 0 \\
+(x+2)(x+3) = 0 
+\begin{cases}
+x_{1} = -2 \\
+x_{2} = -3
+\end{cases} \\
+\space \\
+A(-2)^{n} + B(-3)^{n} \\
+\space \\
+F(n) = 42(4^n) \\
+a_{n}^{(p)} = C4^{n} \\
+4^{n}C = -5(4^{n-1}) - 6(4^{n-2}) + 42(4^{n}) \\
+4^{2}C = -5(4) - 6 + 42(4^{2}) \\
+16C = -20 - 6 + 42(16) \\
+16C = 646 \\
+\textcolor{gold}{C ={646 \over 16} = {323 \over 8}} \\
+\space \\
+\textcolor{69a847}{A(-2)^{n} + B(-3)^{n} + {323 \over 8}(4^{n})}
+$$
+
 15. Escriba un problema que pueda ser planteado como una recurrencia lineal no homogénea con coeficientes constantes de segundo orden. Considere que la parte no homogénea es $f(n) = n(e^{n})$. Resuelva completamente la relación de recurrencia resultante tomando en cuenta que $a_{0} = 1$, $a_{1} = 2 + e$.
+
+> Se anexan las fotos de los apuntes y procedimientos
