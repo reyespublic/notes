@@ -3,7 +3,7 @@ pinned: true
 tags: [Notebook, School]
 title: Cálculo Diferencial – Notebook
 created: '2020-02-16T06:42:49.001Z'
-modified: '2020-03-02T15:52:11.639Z'
+modified: '2020-03-12T14:33:50.709Z'
 ---
 
 # Cálculo Diferencial – Notebook
@@ -885,15 +885,123 @@ $$
 
 ### Fórmulas de derivación <a name="U3T1S3"></a> <small>[:arrow_heading_up:](#index)</small>
 
+| Función | Derivada |
+| :-----: | :------: |
+| $f(x) = c$ | $f'(x) = 0$ |
+| $f(x) = x$ | $f'(x) = 1$ |
+| $f(x) = x^{2}$ | $f'(x) = 2x$ |
+| $f(x) = x^{3}$ | $f'(x) = 3x^{2}$ |
+| $f(x) = x^{n}$ | $f'(x) = nx^{n-1}$ |
+| $f(x) = \sqrt{x}$ | $f'(x) = {1 \over 2 \sqrt{x}}$ |
+| $f(x) = sen(x)$ | $f'(x) = cos(x)$ |
+| $f(x) = cos(x)$ | $f'(x) = -sen(x)$ |
+| $f(x) = tan(x)$ | $f'(x) = sec^{2}(x)$ |
+| $f(x) = e^{x}$ | $f'(x) = e^{x}$ |
+| $f(x) = ln(x)$ | $f'(x) = {1 \over x}$ |
+
 ### Reglas de derivación <a name="U3T1S4"></a> <small>[:arrow_heading_up:](#index)</small>
+
+Las fórmulas de derivación anteriores son importantes, pero no son suficientes pues no podríamos conocer la derivada de la función $f(x) = x^{2} + sen(x)$.
+
+En este momento introducimos una nueva notación para la derivada:
+
+$$
+f' = {df \over dx} \iff f'(x) = {df \over dx}(x)
+$$
+
+Usamos esta notación nueva para expresar las siguientes **reglas de derivación:**
+
+$$
+{d \over dx}[cf] = c({df \over dx})
+$$
+
+$$
+{d \over dx}[f + g] = {df \over dx} + {dg \over dx}
+$$
+
+$$
+{d \over dx}[f - g] = {df \over dx} - {dg \over dx}
+$$
+
+$$
+{d \over dx}[fg] = ({df \over dx})(g) + ({dg \over dx})(f)
+$$
+
+$$
+{d \over dx}[{f \over g}] = {({df \over dx})(g) - ({dg \over dx})(f) \over (g)^{2}}
+$$
+
+$$
+{d \over dx}[f(g(x))] = f'(g(x))g'(x)
+$$
 
 ### Cálculo de derivadas <a name="U3T1S5"></a> <small>[:arrow_heading_up:](#index)</small>
 
+**Ejemplo:** Si $f(x) = 5$, hallar la derivada.
+
+$$
+f'(x) = 0
+$$
+
+**Ejemplo:** Si $f(x) = 6tan(x)$, hallar la derivada.
+
+$$
+f'(x) = 6sec^{2}(x)
+$$
+
+**Ejemplo:** Si $f(x) = x^{2} + sen(x)$, hallar la derivada.
+
+$$
+f'(x) = 2x + cos(x)
+$$
+
+**Ejemplo:** Si $f(x) = cos(x) - e^{x}$, hallar la derivada.
+
+$$
+f'(x) = -sen(x) - e^{x}
+$$
+
+**Ejemplo:** Si $f(x) = x^{2}sen(x)$, hallar la derivada.
+
+$$
+f'(x) = (2x)sen(x) + cos(x)x^{2}
+$$
+
+**Ejemplo:** Si $f(x) = {x^{2} \over sen(x)}$, hallar la derivada.
+
+$$
+f'(x) = {(2x)sen(x) - cos(x)x^{2} \over sen^{2}(x)}
+$$
+
 ### Fórmulas adicionales de derivación <a name="U3T1S6"></a> <small>[:arrow_heading_up:](#index)</small>
 
+| Función | Derivada |
+| :-----: | :------: |
+| $f(x) = a^{x}$ | $f'(x) = a^{x}ln(a)$ |
+| $f(x) = log_{a}(x)$ | $f'(x) = {1 \over x}log_{a}(e) = {1 \over xln(a)}$ |
+| $f(x) = cot(x)$ | $f'(x) = -csc^{2}(x)$ |
+| $f(x) = sec(x)$ | $f'(x) = sec(x)tan(x)$ |
+| $f(x) = csc(x)$ | $f'(x) = -csc(x)cot(x)$ |
+| $f(x) = arcsen(x)$ | $f'(x) = {1 \over \sqrt{1 - x^{2}}}$ |
+| $f(x) = arccos(x)$ | $f'(x) = {-1 \over \sqrt{1 - x^{2}}}$ |
+| $f(x) = arctan(x)$ | $f'(x) = {1 \over 1 + x^{2}}$ |
 ### Interpretación de la derivada <a name="U3T1S7"></a> <small>[:arrow_heading_up:](#index)</small>
 
+La derivada es un *número* que se puede interpretar de dos maneras:
+
++ **Pendiente de recta tangente**
+
++ **Razón de cambio instantánea**
+
 ### La derivada como pendiente de recta tangente <a name="U3T1S8"></a> <small>[:arrow_heading_up:](#index)</small>
+
+La **pendiente** de una recta es un número $m \in R$ que nos indica qué tan inclinada está dicha recta.
+
+De hecho, $m = tan(\theta)$, donde $\theta$ es el ángulo con el eje $X$.
+
+> Una recta vertical no tiene pendiente (su pendiente sería $\infin$)
+
+> Si $f(x)$ es una función, entonces su derivada en el punto $a$ es precisamente la pendiente que tiene la recta tangente a la gráfica de $f(x)$ sobre el punto $x = a$
 
 ### La derivada como razón de cambio <a name="U3T1S9"></a> <small>[:arrow_heading_up:](#index)</small>
 
